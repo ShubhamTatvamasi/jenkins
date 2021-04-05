@@ -1,9 +1,14 @@
 # jenkins
 
-create a deployment and service:
+Add help repo:
 ```bash
-kubectl create deployment jenkins --image=jenkins/jenkins:lts
-kubectl expose deployment jenkins --port=8080 --name=jenkins
+helm repo add jenkins https://charts.jenkins.io
+helm repo update
+```
+
+Install Jenkins:
+```bash
+helm install jenkins jenkins/jenkins
 ```
 
 Ingress value for jenkins:
@@ -33,6 +38,16 @@ spec:
             port:
               number: 8080
 EOF
+```
+
+---
+
+### Deployment
+
+create a deployment and service:
+```bash
+kubectl create deployment jenkins --image=jenkins/jenkins:lts
+kubectl expose deployment jenkins --port=8080 --name=jenkins
 ```
 
 get admin password:
