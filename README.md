@@ -8,7 +8,10 @@ helm repo update
 
 Install Jenkins:
 ```bash
-helm install jenkins jenkins/jenkins
+helm install jenkins jenkins/jenkins \
+  --create-namespace \
+  --namespace jenkins \
+  --set controller.adminPassword=password
 ```
 
 Ingress value for jenkins:
@@ -18,6 +21,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: jenkins
+  namespace: jenkins
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt
 spec:
