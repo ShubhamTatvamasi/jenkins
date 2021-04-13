@@ -19,7 +19,6 @@ kind: Ingress
 metadata:
   name: jenkins
   annotations:
-    nginx.org/websocket-services: jenkins
     cert-manager.io/cluster-issuer: letsencrypt
 spec:
   tls:
