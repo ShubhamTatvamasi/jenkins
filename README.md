@@ -13,6 +13,7 @@ helm install jenkins jenkins/jenkins \
   --namespace jenkins \
   --set controller.adminPassword=password
 ```
+ID: `admin` Pass: `password`
 
 Ingress value for jenkins:
 ```bash
