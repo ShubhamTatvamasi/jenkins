@@ -1,5 +1,11 @@
 # jenkins
 
+Install docker:
+```bash
+curl -sL https://github.com/ShubhamTatvamasi/docker-install/raw/master/docker-install.sh | bash
+```
+---
+
 Add help repo:
 ```bash
 helm repo add jenkins https://charts.jenkins.io
