@@ -1,3 +1,3 @@
 jenkins.shubhamtatvamasi.com {
-  reverse_proxy wordpress:8080
+  reverse_proxy jenkins:8080
 }
