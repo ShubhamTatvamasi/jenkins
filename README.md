@@ -9,6 +9,12 @@ Start Jenkins:
 ```bash
 docker-compose up -d
 ```
+
+Get Jenkins Admin Password:
+```bash
+docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+```
+
 ---
 
 Add help repo:
