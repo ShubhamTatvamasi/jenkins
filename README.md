@@ -4,6 +4,11 @@ Install docker:
 ```bash
 curl -sL https://github.com/ShubhamTatvamasi/docker-install/raw/master/docker-install.sh | bash
 ```
+
+Start Jenkins:
+```bash
+docker-compose up -d
+```
 ---
 
 Add help repo:
