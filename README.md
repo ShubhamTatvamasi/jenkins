@@ -1,5 +1,7 @@
 # jenkins
 
+### Docker
+
 Install docker:
 ```bash
 curl -sL https://github.com/ShubhamTatvamasi/docker-install/raw/master/docker-install.sh | bash
@@ -16,6 +18,8 @@ docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 ```
 
 ---
+
+### Kubernetes
 
 Add help repo:
 ```bash
